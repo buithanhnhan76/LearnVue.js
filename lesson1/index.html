@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.JS</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- div contain content -->
+    <div id="app">
+        <!-- use html here or use template -->
+        <h1>Hello {{name}}</h1>
+        <!-- pass attribute use v-bind:atribute for dynamic attribute -->
+        <img v-bind:src="picture" alt=""> <br>
+        <button v-on:click="changeUser()" >Change User</button>
+    </div>
+    <!-- vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
